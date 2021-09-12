@@ -1,0 +1,75 @@
+//- //- index.pug
+//- doctype html
+//- html
+//-   head
+//-     style
+//-       include ../static/style.css
+//-   body
+//-     h1 My Site
+//-     p Welcome to my super lame site.
+//-     script
+//-       include ../static/index.js
+
+index.pug
+doctype html
+html  
+  head 
+    title SR_Dance_Academy 
+    style
+      include ../static/style.css
+  body 
+    nav#navbar.top 
+            ul
+                div#logo 
+                  img(src="/static/img/logo.png")
+                  | SDA
+                li #[a(herf="/") Home]
+                li #[a(herf="/") About ]
+                li #[a(herf="/") Services ]
+                li #[a(herf="/") Class Info ]
+                li #[a(herf="/contact") Contact Us]
+
+    section#introSection          
+        div Welcome to Sunny's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    
+    
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/dnc5.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/dnc4.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/dnc3.png")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+
+    section#sponsorsSection 
+        h2 Our Sponsors
+        div#sponsors
+          img(src= "/static/img/1.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "/static/img/hp.png", alt= "Sponsor Image", class= "spImage")
+          img(src= "/static/img/5.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "/static/img/4.jpg", alt= "Sponsor Image", class= "spImage")
+ 
+    footer#footer 
+             | Copyright © 2021 SunnyRathaur.com | All Rights Reserved
+    script 
+        include ../static/index.js
